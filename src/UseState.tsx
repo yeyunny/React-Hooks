@@ -21,7 +21,7 @@ function UseState() {
   };
   //주석 부분도 콜백으로 연습! 화면에 true false 가 바뀔거야 버튼 누르면
   const trueFalseHandler = () => {
-    // setIsTrue();
+    setIsTrue((prev) => !prev);
   };
 
   const input = (e: { target: { value: SetStateAction<string> } }) => {
